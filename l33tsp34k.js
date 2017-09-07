@@ -21,7 +21,6 @@ function leetspeak(word){
         else {
             returnWord += wordArray[x];
         }
-        
     }
     return returnWord;
 }
