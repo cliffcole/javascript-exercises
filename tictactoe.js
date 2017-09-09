@@ -1,17 +1,37 @@
 function diagonalWinner(tic){
     if(tic[0][0] == tic[1][1]){
         if(tic[0][0] == tic[2][2]){
-            console.log("Winner");
+            console.log("Winner: "+tic[0][0]);
+            return("Winner: "+tic[0][0]);
         }
     }  else if(tic[2][0] == tic[1][1]) {
         if(tic[2][0] == tic[0][2]){
-            console.log("Winner 2");
+            console.log("Winner: "+ tic[2][0]);
         }
 
+    } else if(tic[0][0] == tic[0][1]){
+        if(tic[0][0] == tic[0][2]){
+            console.log("Winner: "+tic[0][0]);
+            return("Winner: "+tic[0][0]);
+        }
+    }  else if(tic[2][0] == tic[1][1]) {
+        if(tic[2][0] == tic[0][2]){
+            console.log("Winner: "+ tic[2][0]);
+        }
     }
 }
 function horizontalWinner(tic){
-    
+    if(tic[0][0] == tic[1][1]){
+        if(tic[0][0] == tic[2][2]){
+            console.log("Winner: "+tic[0][0]);
+            return("Winner: "+tic[0][0]);
+        }
+    }  else if(tic[2][0] == tic[1][1]) {
+        if(tic[2][0] == tic[0][2]){
+            console.log("Winner: "+ tic[2][0]);
+        }
+
+    }
 }
 
 function ticTacToe(tic){
