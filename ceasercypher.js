@@ -1,7 +1,7 @@
 
-var offset = 13;
+//var offset = 13;
 
-function encrypt(text){
+function encrypt(text, offset){
     var results = ""
     for(var x = 0; x < text.length; x++){
         var charCode = text.charCodeAt(x);
@@ -41,15 +41,11 @@ function encrypt(text){
             //console.log("N: "+newChar);
             //console.log(String.fromCharCode(parseInt(text.charCodeAt(x) - offset)));
         }
-        //console.log(charCode);
-        //console.log("sub: "+parseInt(charCode - offset));
-        //console.log(String.fromCharCode(parseInt(text.charCodeAt(x) - offset)));
-        //console.log(text.charCodeAt(x));
     }
     return results;
 }
 
-function decrypt(text){
+function decrypt(text,offset){
     var results = ""
     for(var x = 0; x < text.length; x++){
         var charCode = text.charCodeAt(x);
@@ -98,6 +94,6 @@ function decrypt(text){
     return results;
 }
 
-console.log(decrypt("Travhf jvgubhg rqhpngvba vf yvxr fvyire va gur zvar"));
+console.log(decrypt("Travhf jvgubhg rqhpngvba vf yvxr fvyire va gur zvar", 13));
 //console.log("Travhf jvgubhg rqhpngvba vf yvxr fvyire va gur zvar");
-console.log(encrypt('Genius without education is like silver in the mine'));
+console.log(encrypt('Genius without education is like silver in the mine',13));
